@@ -19,24 +19,24 @@
         <StackPanel Grid.Row="0"
                     Grid.Column="1"
                     Margin="5,5,5,5">
-            <TextBlock x:Name="lblName"
+            <TextBlock x:Name="NameTextBox"
                        Text="Name"></TextBlock>
             <TextBox x:Name="NameTextbox"></TextBox>
-            <TextBlock x:Name="lblSurname"
+            <TextBlock x:Name="SurnameTextBox"
                        Text="Surname"></TextBlock>
             <TextBox x:Name="SurnameTextbox"></TextBox>
-            <TextBlock x:Name="lblAge"
+            <TextBlock x:Name="Age"
                        Text="Age"></TextBlock>
             <TextBox x:Name="AgeTextBox"></TextBox>
             <Button Grid.Column="0"
                     Width="100"
                     Height="20"
                     Margin="5,5,5,5"
-                    x:Name="btnNames"
+                    x:Name="NameButton"
                     Click="Add_Click"
                     Content="Add"></Button>
             <TextBlock Text="Name to delete"></TextBlock>
-            <TextBox x:Name="DeleteByIdTextBox"></TextBox>
+            <TextBox x:Name="DeleteTextBox"></TextBox>
             <Button Grid.Column="0"
                     Width="100"
                     Height="20"
@@ -45,12 +45,12 @@
                     Click="Delete_Click"
                     Content="Delete"></Button>
         </StackPanel>
-        <ListView x:Name="lstNames"
+        <ListView x:Name="NameList"
                   Margin="5,5,5,5"
                   Grid.Column="0"
                   Grid.Row="0">
             <ListView.View>
-                <GridView x:Name="grdNames">
+                <GridView x:Name="NameGridview">
                     <GridViewColumn Header="Id"
                                     DisplayMemberBinding="{Binding Id}" />
                     <GridViewColumn Header="Name"
